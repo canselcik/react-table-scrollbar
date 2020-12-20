@@ -97,7 +97,6 @@ export default class TableScrollbar extends React.Component {
       const thead = this.table.getElementsByTagName("thead")[0];
       if (thead) {
         this.headHeight = thead.clientHeight;
-        console.log("Table head height:", this.headHeight);
       }
     }
 
@@ -114,7 +113,6 @@ export default class TableScrollbar extends React.Component {
       this.tableclone.appendChild(tbody);
       this.rowHeight = tbody.clientHeight;  // Use tbody iso of tr to account for boder-spacing.
       this.tableclone.removeChild(tbody);
-      console.log("Table row height:", this.rowHeight);
     }
   }
 
